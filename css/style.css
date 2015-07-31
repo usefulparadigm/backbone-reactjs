@@ -1,0 +1,6 @@
+.list-group-item .x {
+  float: right;
+  color: #FF4136; /* modern RED */
+  display: none;
+}
+.list-group-item:hover .x { display: inline-block; }

@@ -1,0 +1,22 @@
+{
+  "name": "backbone-reactjs",
+  "version": "0.0.0",
+  "authors": [
+    "Sukjoon Kim <sjoonk@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "backbone": "~1.2.1",
+    "react": "~0.13.3",
+    "react.backbone": "~0.6.0"
+  }
+}
