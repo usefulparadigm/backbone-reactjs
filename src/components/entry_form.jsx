@@ -1,6 +1,6 @@
 // entry_form.jsx
 
-var NewEntryForm = React.createClass({
+var EntryForm = React.createClass({
 
   handleSubmit: function(e) {
     e.preventDefault();
@@ -27,4 +27,4 @@ var NewEntryForm = React.createClass({
   
 });
 
-module.exports = NewEntryForm;
+module.exports = EntryForm;

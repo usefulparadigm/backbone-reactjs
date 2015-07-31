@@ -1,9 +1,23 @@
 // entry_list.jsx
 
 var EntryItem = require('./entry_item.jsx');
-var NewEntryForm = require('./new_entry_form.jsx');
+var EntryForm = require('./entry_form.jsx');
 
 var EntryList = React.createClass({
+
+  // getInitialState: function() {
+  //   return {
+  //     entries: []
+  //   }
+  // },
+  //
+  // componentWillMount: function() {
+  //   var self = this;
+  //   this.setState({entries: this.props.collection});
+  //   // this.props.collection.fetch().done(function(entries) {
+  //   //   self.setState({entries: entries});
+  //   // });
+  // },
   
   componentDidMount: function() {
     // explicitly bind `null` to `forceUpdate`, as it demands a callback and
@@ -23,7 +37,7 @@ var EntryList = React.createClass({
     return (
       <div className="entry-list">
         <h1>Listing Entries</h1>
-        <NewEntryForm collection={this.props.collection} />
+        <EntryForm collection={this.props.collection} />
         <hr />
         <ul className="entries list-group">
         {this.props.collection.sort().map(function(entry) {
