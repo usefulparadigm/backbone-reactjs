@@ -5,25 +5,10 @@ var EntryForm = require('./entry_form.jsx');
 
 var EntryList = React.createClass({
 
-  // getInitialState: function() {
-  //   return {
-  //     entries: []
-  //   }
-  // },
-  //
-  // componentWillMount: function() {
-  //   var self = this;
-  //   this.setState({entries: this.props.collection});
-  //   // this.props.collection.fetch().done(function(entries) {
-  //   //   self.setState({entries: entries});
-  //   // });
-  // },
-  
   componentDidMount: function() {
     // explicitly bind `null` to `forceUpdate`, as it demands a callback and
     // React validates that it's a function. `collection` events passes
     // additional arguments that are not functions
-    // https://facebook.github.io/react/docs/component-api.html#forceupdate
     this.props.collection.on('add remove change', this.forceUpdate.bind(this, null));
   },
 

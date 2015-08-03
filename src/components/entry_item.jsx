@@ -3,10 +3,12 @@
 var EntryItem = React.createClass({
 
   handleClick: function(event) {
-    console.log(this.props.model);
+    event.preventDefault();
+    // console.log(this.props.model);
     this.props.model.destroy({
       success: function() { console.log('deleted!'); }
     });
+    return;
   },
   
   render: function() {
