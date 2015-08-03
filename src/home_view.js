@@ -13,6 +13,7 @@ var HomeView = Backbone.View.extend({
   render: function() {
     var entryList = React.createElement(EntryList, {collection: this.collection});
     React.render(entryList, this.el);
+    return this;
   }
 });
 
